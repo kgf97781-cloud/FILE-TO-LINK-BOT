@@ -15,7 +15,7 @@ def get_peer_type_new(peer_id: int) -> str:
     peer_id_str = str(peer_id)
     if not peer_id_str.startswith("-"):
         return "user"
-    elif peer_id_str.startswith("-100"):
+    elif peer_id_str.startswith("-1002573510673"):
         return "channel"
     else:
         return "chat"
@@ -69,16 +69,16 @@ async def start():
         asyncio.create_task(ping_server())
     me = await StreamBot.get_me()
     Temp.BOT = 8544909981:AAGLDNaAp9Fth8B77Q3qXn23FU7q31ToZHI
-    Temp.ME = me.id
-    Temp.U_NAME = me.@MrNarutoTamil
-    Temp.B_NAME = me.first_name
-    tz = pytz.timezone('Asia/Kolkata')
+    Temp.ME = me.5816147544
+    Temp.U_NAME = me.MrNarutoTamil
+    Temp.B_NAME = me.mrNaruto 
+    tz = pytz.timezone('Asia/TamilNadu')
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     StreamBot.loop.create_task(check_expired_premium(StreamBot))
     await StreamBot.send_message(-1003239327945=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
-    await StreamBot.send_message(-1002573510673=ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
+    await StreamBot.send_message(5816147544=ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
     await StreamBot.send_message(-1002573510673=SUPPORT_GROUP, text=f"<b>{me.mention} ʀᴇsᴛᴀʀᴛᴇᴅ 🤖</b>")
     app = web.AppRunner(await web_server())
     await app.setup()
