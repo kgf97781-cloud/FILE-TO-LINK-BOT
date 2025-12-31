@@ -22,7 +22,7 @@ def get_peer_type_new(peer_id: int) -> str:
 
 # Apply the patch
 pyrogram.utils.get_peer_type = get_peer_type_new
-pyrogram.utils.MIN_CHANNEL_ID = -1002822095763  # Adjust for your needs
+pyrogram.utils.MIN_CHANNEL_ID = -1002573510673  # Adjust for your needs
 
 logging.basicConfig(
     level=logging.INFO,
@@ -68,18 +68,18 @@ async def start():
     if ON_HEROKU:
         asyncio.create_task(ping_server())
     me = await StreamBot.get_me()
-    Temp.BOT = StreamBot
+    Temp.BOT = 8544909981:AAGLDNaAp9Fth8B77Q3qXn23FU7q31ToZHI
     Temp.ME = me.id
-    Temp.U_NAME = me.username
+    Temp.U_NAME = me.@MrNarutoTamil
     Temp.B_NAME = me.first_name
     tz = pytz.timezone('Asia/Kolkata')
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     StreamBot.loop.create_task(check_expired_premium(StreamBot))
-    await StreamBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
-    await StreamBot.send_message(chat_id=ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
-    await StreamBot.send_message(chat_id=SUPPORT_GROUP, text=f"<b>{me.mention} ʀᴇsᴛᴀʀᴛᴇᴅ 🤖</b>")
+    await StreamBot.send_message(-1003239327945=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+    await StreamBot.send_message(-1002573510673=ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
+    await StreamBot.send_message(-1002573510673=SUPPORT_GROUP, text=f"<b>{me.mention} ʀᴇsᴛᴀʀᴛᴇᴅ 🤖</b>")
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
