@@ -3,28 +3,28 @@ from Script import script
 
 # 🚀 __Bot Configuration__
 SESSION = environ.get('SESSION', 'RexBots')  # Session name
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '38484181'))
+API_HASH = environ.get('API_HASH', '004516cc7835d8a332e1cb5717393ff3')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8544909981:AAGLDNaAp9Fth8B77Q3qXn23FU7q31ToZHI')
 
 # 👑 __Owner & Admins__
-ADMINS = [int(i) for i in environ.get('ADMINS', '').split()]
-AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "").split()]
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'RexBots_Official')
-BOT_USERNAME = environ.get("BOT_USERNAME", 'RexBots_Official')
+ADMINS = [int(i) for i in environ.get('ADMINS', '5816147544').split()]
+AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "-1002573510673").split()]
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Toonworld4all_Tamil')
+BOT_USERNAME = environ.get("BOT_USERNAME", 'Toonworld4all_Tamil')
 
 # 🔗 __Channel & Support Links__
-CHANNEL = environ.get('CHANNEL', 'https://t.me/RexBots_Official')
-SUPPORT = environ.get('SUPPORT', 'https://t.me/RexBots_Official')
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/RexBots_Official')
-HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/RexBots_Official')
+CHANNEL = environ.get('CHANNEL', 'https://t.me/toonworld4all_Tamil')
+SUPPORT = environ.get('SUPPORT', 'https://t.me/toonworld4all_Tamil')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/toonworld4all_Tamil')
+HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/toonworld4all_Tamil')
 
 # 📢 __Log Channels__
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", ''))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-'))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", ''))
-VERIFIED_LOG = int(environ.get('VERIFIED_LOG', ''))
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1002573510673'))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002573510673'))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1002573510673'))
+VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1002573510673'))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002573510673"))
 
 # ✅ __Feature Toggles__
 VERIFY = False  # Enable user verification
@@ -42,7 +42,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 # 💾 __Database Configuration__
-DB_URL = environ.get('DATABASE_URI', "")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://Bosshub:JMaff0WvazwNxKky@cluster0.l0xcoc1.mongodb.net/?appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "rexlinkbot")
 
 # 📸 __Media & Images__
